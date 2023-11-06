@@ -1,0 +1,70 @@
+body {
+    font-family: Avenir, 'Avenir Next LT Pro', Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+    margin: 0 auto;
+    padding: 1em;
+    max-width: 40em;
+}
+h1 {
+    font-size: 1.4em;
+}
+h2 {
+    font-size: 1.1em;
+}
+form {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+input {
+    flex: 6;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+}
+button {
+    flex: 1;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+    background-color: #eee;
+    cursor: pointer;
+}
+output:empty {
+    display: none;
+}
+output {
+    display: block;
+    margin: 0.5em 0;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+    background-color: #f99;
+    cursor: pointer;
+}
+output.valid {
+    background-color: #9f9;
+}
+#demos {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    columns: 2;
+}
+section {
+    padding-bottom: 2em;
+}
+#demos button {
+    font-family: inherit;
+    display: block;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+#demos button:hover {
+    text-decoration: underline;
+}
+#demos li {
+    padding: 0.5em 0;
+}
