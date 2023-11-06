@@ -18,7 +18,6 @@ const result = document.querySelector('.result');
 const demos = document.querySelector('#demos');
 
 const check = sentence => {
-    const sentence = sentencefield.value;
     const letters = 'abcdefghijklmnopqrstuvwxyz';
     const chars = sentence.toLowerCase().replace(/[^a-z]/g, '').split(''); 
     const uniqueLetters = new Set(chars);
