@@ -1,11 +1,18 @@
+html {
+    background: #eee;
+}
 body {
     font-family: Avenir, 'Avenir Next LT Pro', Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
     margin: 0 auto;
     padding: 1em;
     max-width: 40em;
+    margin-top: 1em;
 }
 h1 {
     font-size: 1.4em;
+    text-transform: uppercase;
+    color: green;
+    text-align: center;
 }
 h2 {
     font-size: 1.1em;
@@ -16,12 +23,19 @@ form {
     gap: 1em;
 }
 input {
+    font-family: inherit;
+    font-size: 1em;
     flex: 6;
     padding: 0.5em;
     border: 1px solid #ccc;
     border-radius: 0.5em;
 }
+form button {
+    font-family: inherit;
+    font-size: 1em;
+}
 button {
+    font-family: inherit;
     flex: 1;
     padding: 0.5em;
     border: 1px solid #ccc;
@@ -52,6 +66,9 @@ output.valid {
 }
 section {
     padding-bottom: 2em;
+    background: #fff;
+    border-radius: .5em;
+    padding: 1em;
 }
 #demos button {
     font-family: inherit;

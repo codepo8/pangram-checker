@@ -22,8 +22,6 @@ const check = sentence => {
     const chars = sentence.toLowerCase().replace(/[^a-z]/g, '').split(''); 
     const uniqueLetters = new Set(chars);
     if (uniqueLetters.size === 26) {
-        let out = 'This is a pangram.';
-        result.classList.add('valid');
         let letters = {};
         chars.forEach(char => {
             letters[char] = letters[char] ? letters[char] + 1 : 1;
@@ -31,11 +29,11 @@ const check = sentence => {
         let duplicates = [];
         Object.keys(letters).forEach(letter => {
             if (letters[letter] > 1) {
-                duplicates.push(`${letter}×${letters[letter]}`);
+                duplicates.push(`${letters[letter]}×${letter}`);
             }
         });     
-        out += `It is ${sentence.length} letters long. Duplicates: ${duplicates.join(', ')}.`;
-        result.innerHTML = out;
+        result.textContent = `'This is a pangram. It is ${sentence.length} letters long. Duplicates are: ${duplicates.join(', ')}.`;
+        result.classList.add('valid');
     } else {
         let missing = [];
         letters.split('').forEach(letter => {
